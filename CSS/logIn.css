@@ -1,0 +1,176 @@
+* {
+    color: var(--text);
+}
+
+.card {
+    background-color: var(--window-background);
+    border: 3px solid var(--stroke-btn-background);
+    border-radius: 8px;
+    top: 20vh;
+    left: 30vw;
+    height: 60vh;
+    width: 40vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3, h4 {
+    margin: 0.5vh;
+}
+
+h4 {
+    margin-bottom: 5vh;
+}
+
+#userForm {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+}
+
+.formElement {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 2vh;
+    height: 5vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border: 2px solid var(--stroke-btn-background);
+    border-radius: 3px;
+    line-height: 2rem;
+    background-color: var(--window-background);
+    width: 20vw;
+    height: 4vh;
+}
+
+
+label {
+    position: absolute;
+    left: 1vw;
+    transition: 1s;
+    height: 2vh;
+    top: calc((5vh - 2vh)/2);
+    padding: 0 0.5vw;
+    background-color: var(--window-background);
+    display: inline-flex;
+    align-items: center;
+}
+
+input:focus {
+    outline: 1px solid var(--stroke-btn-background);
+    height: 5vh;
+}
+input:focus +label, input:not(:placeholder-shown) ~label {
+    transition: 1s;
+    font-size: 0.8rem;
+    left: 0.5vw;
+    top: calc(-1*(5vh - 2vh)/2);
+    color: var(--stroke-btn-background);
+    border: 2px solid var(--stroke-btn-background);
+    border-radius: 3px;
+}
+#instructionsBtn {
+    position: absolute;
+    bottom: 1vh;
+    background-color: var(--question-list-background);
+    border-radius: 5px;
+    border: none;
+    width: 14vw;
+    height: 6vh;
+    color: #FAF7FD;
+}
+
+#instructionsBtn:hover {
+    background-color: var(--stroke-btn-background);
+    transition: 500ms;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(59, 36, 71, 0.65);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.modal{
+    margin-top: 40vh;
+    height: 20vh;
+    margin-left: 36vw;
+    width: 28vw;
+    background-color: var(--window-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid var(--text);
+    position: relative;
+}
+
+.close {
+    background: none;
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+    padding: 0;
+}
+
+.close:hover svg {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+
+#instructionsCard {
+    display: none;
+    background-color: var(--window-background);
+    border: 3px solid var(--stroke-btn-background);
+    border-radius: 8px;
+    top: 16vh;
+    left: 20vw;
+    height: 66vh;
+    width: 60vw;
+    position: absolute;
+}
+
+#instructionsCard p {
+    width: 90%;
+    margin-left: 5%;
+}
+
+ul {
+    margin-left: 2vw;
+}
+
+#instructionsCard img {
+    width: 1rem;
+    margin-left: 0.5rem;
+}
+
+#startBtn {
+    margin-left: calc((60vw - 15vw) / 2);
+    position: absolute;
+    bottom: 1vh;
+    background-color: var(--question-list-background);
+    border-radius: 5px;
+    border: none;
+    width: 14vw;
+    height: 6vh;
+    color: #FAF7FD;
+}
+
+#startBtn:hover {
+    background-color: var(--stroke-btn-background);
+    transition: 500ms;
+}

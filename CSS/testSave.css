@@ -1,0 +1,24 @@
+body{
+    background: var(--background);
+}
+#VideoBlock{
+    opacity: 0;
+    background: black;
+    position: absolute;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    transition: 1s;
+}
+#VideoGo{
+    margin-top: 25vh;
+    opacity: 0;
+    scale: 0;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 100%;
+    transition: 3s;
+}

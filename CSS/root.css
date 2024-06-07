@@ -1,0 +1,38 @@
+:root {
+    --background: #FAF7FD;
+    --window-background: #F4F1F6;
+    --button-background: #D0C3DA;
+    --question-list-background: #D0C3DA;
+    --stroke-btn-background: #6B4B7E;
+    --text: #3B2447;
+    --index: calc(1vw + 1vh);
+}
+@font-face {
+    src: url("../Font/Inter-VariableFont_slnt,wght.ttf");
+    font-family: Inter;
+}
+* {
+    font-family: Inter;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+@keyframes animBody {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+body {
+    margin: 0 auto;
+    background-color: var(--background);
+    animation: linear 1s animBody;
+}
+
+button {
+    border: none;
+    background: none;
+}

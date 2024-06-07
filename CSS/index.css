@@ -1,0 +1,43 @@
+* {
+    color: var(--text);
+}
+
+.card {
+    background-color: var(--window-background);
+    border: 3px solid var(--stroke-btn-background);
+    border-radius: 8px;
+    margin-top: 32vh;
+    height: 36vh;
+    margin-left: 33vw;
+    width: 34vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3, h4 {
+    margin: 0.5vh;
+}
+
+h4 {
+    /*
+    margin-bottom: 5vh;
+    */
+}
+
+button {
+    bottom: 1vh;
+    background-color: var(--question-list-background);
+    border-radius: 5px;
+    border: none;
+    width: 12vw;
+    height: 6vh;
+    margin-top: 2vh;
+    color: #FAF7FD;
+}
+
+button:hover {
+    background-color: var(--stroke-btn-background);
+    transition: 500ms;
+}

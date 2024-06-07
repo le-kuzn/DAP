@@ -1,0 +1,147 @@
+* {
+    color: var(--text);
+}
+
+#indexBtn {
+    background-color: var(--question-list-background);
+    border-radius: 5px;
+    border: none;
+    width: 9vw;
+    height: 6vh;
+    margin: 2vh;
+    color: #FAF7FD;
+}
+
+#indexBtn:hover {
+    background-color: var(--stroke-btn-background);
+    transition: 500ms;
+}
+
+.card {
+    background-color: var(--window-background);
+    border: 3px solid var(--stroke-btn-background);
+    border-radius: 8px;
+    top: 25vh;
+    left: 31vw;
+    height: 50vh;
+    width: 38vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3, h4 {
+    margin: 0.5vh;
+}
+
+h4 {
+    margin-bottom: 5vh;
+}
+
+#expertForm {
+    display: flex;
+    flex-direction: column;
+    margin: 3vh;
+}
+
+.formElement {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 2vh;
+    height: 5vh;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    border: 2px solid var(--stroke-btn-background);
+    border-radius: 3px;
+    line-height: 2rem;
+    background-color: var(--window-background);
+    width: 20vw;
+    height: 4vh;
+}
+
+
+label {
+    position: absolute;
+    left: 1vw;
+    transition: 1s;
+    height: 2vh;
+    top: calc((5vh - 2vh)/2);
+    padding: 0vh 0.5vw;
+    background-color: var(--window-background);
+    display: inline-flex;
+    align-items: center;
+}
+
+input:focus {
+    outline: 1px solid var(--stroke-btn-background);
+    height: 5vh;
+}
+input:focus +label, input:not(:placeholder-shown) ~label {
+    transition: 1s;
+    font-size: 0.8rem;
+    left: 0.5vw;
+    top: calc(-1*(5vh - 2vh)/2);
+    color: var(--stroke-btn-background);
+    border: 2px solid var(--stroke-btn-background);
+    border-radius: 3px;
+}
+#expertLogBtn {
+    position: absolute;
+    bottom: 1vh;
+    background-color: var(--question-list-background);
+    border-radius: 5px;
+    border: none;
+    width: 10vw;
+    height: 6vh;
+    color: #FAF7FD;
+}
+
+#expertLogBtn:hover {
+    background-color: var(--stroke-btn-background);
+    transition: 500ms;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(59, 36, 71, 0.65);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.modal {
+    margin-top: 40vh;
+    height: 20vh;
+    margin-left: 36vw;
+    width: 28vw;
+    background-color: var(--window-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 2px solid var(--text);
+    position: relative;
+}
+
+.close {
+    background: none;
+    position: absolute;
+    right: 1vh;
+    top: 1vh;
+    padding: 0;
+}
+
+.close:hover svg {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
